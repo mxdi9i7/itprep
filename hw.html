@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+<head>
+    <title>IT 少年宫 | 课程内容</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="image" content="img/icon.png">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <script src="js/head.js"></script>
+</head>
+<body class="main" id="or">
+<!--Facebook API -->
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1154109137953970',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--end of facebook script-->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="index-logo-img" src="img/favicon.jpg" height="50px" width="50px">
+            <span class="menu-item index-brand-text"><strong>IT</strong>少年宫</span>
+            <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse out" id="bs-example-navbar-collapse-2" aria-expanded="true">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" class="menu-item">首页</a></li>
+                <li><a href="about.html" class="menu-item">关于我们</a></li>
+                <li><a href="visit.html" class="menu-item">参观课堂</a></li>
+                <li><a href="class.html" class="menu-item">课程内容</a></li>
+                <li><a href="contact.html" class="menu-item">联系我们</a></li>
+                <li><a href="hw.html" class="active-link hw-item">作业专区</a></li>
+                <!--<li><div class="fb-like" data-share="true" data-width="250" data-show-faces="true"></div></li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hw-section">
+   <div class="row">
+       <div class="col-md-1">
+           <!--blank-->
+       </div>
+       <div class="col-md-10">
+           <h1 class="hw-header">课后作业区</h1>
+           <center><p1 class="hw-description">课程作业可下滑到相应的分区查看。请同学们按时完成作业以跟上进度, 每次课后作业都会评分, 迟交的作业以零分处理。如果有不明白的知识点可在微信群里像老师求助或参与我们的自由问答时间。</p1></center>
+           <div class="row">
+               <div class="col-md-3">
+                   <button class="hw-btn" onclick="window.location.href='#webhw'">网页设计课</button>
+               </div>
+               <div class="col-md-3">
+                   <button class="hw-btn" onclick="window.location.href='#webwk'">周末网页设计课</button>
+               </div>
+               <div class="col-md-3">
+                   <button class="hw-btn" onclick="window.location.href='#pythonwk'">周末Python课</button>
+               </div>
+               <div class="col-md-3">
+                   <button class="hw-btn" onclick="window.location.href='#ioswk'">周末iOS课</button>
+               </div>
+           </div>
+           <h1 class="hw-subject" style="margin-bottom: 250px; margin-top: 200px">大家好好学习,天天向上!</h1>
+
+
+
+           <h1 class="hw-subject" id="webhw">网页设计课后作业</h1>
+           <div class="hw-accordion">
+               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingOne">
+                           <h4 class="panel-title">
+                               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#web01" aria-expanded="true" aria-controls="collapseOne">
+                                   课后作业#1
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/05/2016</span>
+                                       <span class="label label-danger">截止: July/07/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                           <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        运用<code>p1, h1, ul, li, img, a, br, hr, center</code>等HTML标签来做一个简易的个人介绍页面
+                                    </li>
+                                    <li class="list-group-item">
+                                        列出名字, 个人照片, 兴趣爱好排列, 以及一个通往你最喜欢的网页的超链接</li>
+                                    </li>
+                                    <li class="list-group-item">
+                                        把个人照片也做成一个超链接
+                                    </li>
+                                </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingTwo">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web02" aria-expanded="false" aria-controls="collapseTwo">
+                                   课后作业#2
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/07/2016</span>
+                                       <span class="label label-danger">截止: July/12/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       <img src="http://www.w3schools.com/html/img_sem_elements.gif">
+                                   </li>
+                                   <li class="list-group-item">
+                                       如上图所描述,运用<code>section, article, aside, div, center, br, hr, header, footer</code>等标签来排版你的个人主页。
+                                   </li>
+                                   <li class="list-group-item">
+                                       提示: 可以把兴趣爱好放<code>aside</code>里面, 名字,简介放在<code>header</code>里面, <code>section</code>里面放照片等。
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web03" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#3
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/12/2016</span>
+                                       <span class="label label-danger">截止: July/14/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       在个人主页里加上你最喜欢的Youtube Video。
+                                   </li>
+                                   <li class="list-group-item">
+                                       在Youtube Video 后面加上你最喜欢的页面<code>iframe</code>。
+                                   </li>
+                                   <li class="list-group-item">
+                                       在主页里加上你学校的地址,以及对应的Google Map API</li>
+                                   </li>
+                                   <li class="list-group-item">
+                                       熟练运用CSS的inline, internal styling, 给主页里的元素上色, 加效果。
+                                   </li>
+                                   <li class="list-group-item">
+                                       创造第一个自己的CSS样式库
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web04" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#4
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/14/2016</span>
+                                       <span class="label label-danger">截止: July/19/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       所有的inline, internal styling 转移到CSS Sheet里面
+                                   </li>
+                                   <li class="list-group-item">
+                                       如上图所描述,做出一个正好塞满一个屏幕的背景图片,然后把你的名字, Welcome message 用<code>position properties</code>移到屏幕正中央
+                                   </li>
+                                   <li class="list-group-item">
+                                       运用<code>ul & li</code>做出一个置顶导航栏,并且在你滚动滑轮的时候会跟随页面
+                                   </li>
+                                   <li class="list-group-item">
+                                       做出一个联系表格, 让用户可以输入名字, email, 信息, 以及一个提交按钮
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web05" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#5
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/19/2016</span>
+                                       <span class="label label-danger">截止: July/21/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       给主页加上Bootstrap库,并把导航栏换成Bootstrap 库里的导航栏
+                                   </li>
+                                   <li class="list-group-item">
+                                        导航栏里加上Dropdown功能, 鼠标Hover上去就可以Dropdown
+                                   </li>
+                                   <li class="list-group-item">
+                                       把之前设计的联系表格换成Bootstrap 风格的联系表格
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web06" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#6
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/21/2016</span>
+                                       <span class="label label-danger">截止: July/26/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       给主页加上一个loader, loader的代码可以借用下一条
+                                   </li>
+                                   <li class="list-group-item">
+                                       Loader 1:<br>
+                                       <code>
+                                           #loader {
+                                           width: 60px;
+                                           height: 60px;
+                                           background-color: #fff;
+                                           position: absolute;
+                                           top: 50%;
+                                           left: 50%;
+                                           margin-top: -30px;
+                                           margin-left: -30px;
+                                           -webkit-transform: translateX(-50%) translateY(-50%);
+                                           -moz-transform: translateX(-50%) translateY(-50%);
+                                           -ms-transform: translateX(-50%) translateY(-50%);
+                                           -o-transform: translateX(-50%) translateY(-50%);
+                                           transform: translateX(-50%) translateY(-50%);
+
+                                           -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+                                           animation: rotateplane 1.2s infinite ease-in-out;
+                                           }
+
+                                           @-webkit-keyframes rotateplane {
+                                           0% { -webkit-transform: perspective(120px) }
+                                           50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+                                           100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+                                           }
+
+                                           @keyframes rotateplane {
+                                           0% {
+                                           transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                                           -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                                           } 50% {
+                                           transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                                           -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                                           } 100% {
+                                           transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                                           -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                                           }
+                                           }
+
+                                       </code>
+                                   </li>
+                                   <li class="list-group-item">
+                                       Loader 2:<br>
+                                       <code>
+                                           .spinner.wanderingcubes {
+                                           width: 32px;
+                                           height: 32px;
+                                           position: absolute;
+                                           top: 50%;
+                                           left: 50%;
+                                           -webkit-transform: translateX(-50%) translateY(-50%);
+                                           -moz-transform: translateX(-50%) translateY(-50%);
+                                           -ms-transform: translateX(-50%) translateY(-50%);
+                                           -o-transform: translateX(-50%) translateY(-50%);
+                                           transform: translateX(-50%) translateY(-50%);
+                                           }
+
+                                           .cube1, .cube2 {
+                                           background-color: #333;
+                                           width: 10px;
+                                           height: 10px;
+                                           position: absolute;
+                                           top: 0;
+                                           left: 0;
+
+                                           -webkit-animation: cubemove 1.8s infinite ease-in-out;
+                                           animation: cubemove 1.8s infinite ease-in-out;
+                                           }
+
+                                           .cube2 {
+                                           -webkit-animation-delay: -0.9s;
+                                           animation-delay: -0.9s;
+                                           }
+
+                                           @-webkit-keyframes cubemove {
+                                           25% { -webkit-transform: translateX(22px) rotate(-90deg) scale(0.5) }
+                                           50% { -webkit-transform: translateX(22px) translateY(22px) rotate(-180deg) }
+                                           75% { -webkit-transform: translateX(0px) translateY(22px) rotate(-270deg) scale(0.5) }
+                                           100% { -webkit-transform: rotate(-360deg) }
+                                           }
+
+                                           @keyframes cubemove {
+                                           25% {
+                                           transform: translateX(42px) rotate(-90deg) scale(0.5);
+                                           -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+                                           } 50% {
+                                           /* Hack to make FF rotate in the right direction */
+                                           transform: translateX(42px) translateY(42px) rotate(-179deg);
+                                           -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+                                           } 50.1% {
+                                           transform: translateX(42px) translateY(42px) rotate(-180deg);
+                                           -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+                                           } 75% {
+                                           transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+                                           -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+                                           } 100% {
+                                           transform: rotate(-360deg);
+                                           -webkit-transform: rotate(-360deg);
+                                           }
+                                           }
+                                       </code>
+                                   </li>
+                                   <li class="list-group-item">
+                                       Loader 3:<br>
+                                       <code>
+                                           #loader {
+                                           position: absolute;
+                                           left: 50%;
+                                           top: 50%;
+                                           z-index: 1;
+                                           width: 150px;
+                                           height: 150px;
+                                           margin: -75px 0 0 -75px;
+                                           border: 16px solid #f3f3f3;
+                                           border-radius: 50%;
+                                           border-top: 16px solid #3498db;
+                                           width: 120px;
+                                           height: 120px;
+                                           -webkit-animation: spin 2s linear infinite;
+                                           animation: spin 2s linear infinite;
+                                           }
+
+                                           @-webkit-keyframes spin {
+                                           0% { -webkit-transform: rotate(0deg); }
+                                           100% { -webkit-transform: rotate(360deg); }
+                                           }
+
+                                           @keyframes spin {
+                                           0% { transform: rotate(0deg); }
+                                           100% { transform: rotate(360deg); }
+                                           }
+
+                                       </code>
+                                   </li>
+                                   <li class="list-group-item">
+                                       运用Gridding System, 以三行三列的样式把自己的照片展示出来。 效果图可参观下一条
+                                   </li>
+                                   <li class="list-group-item">
+                                        <img width="1000" height="500" src="img/instagramdemo.jpg">
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web07" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#7
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/26/2016</span>
+                                       <span class="label label-danger">截止: July/28/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web08" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#8
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/28/2016</span>
+                                       <span class="label label-danger">截止: August/2/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web08" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#web09" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#9
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/4/2016</span>
+                                       <span class="label label-danger">截止: August/9/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="web09" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <h1 class="hw-subject" id="webwk">周末网页设计课后作业</h1>
+           <div class="hw-accordion">
+               <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingOne">
+                           <h4 class="panel-title">
+                               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk01" aria-expanded="true" aria-controls="collapseOne">
+                                   课后作业#1
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/02/2016</span>
+                                       <span class="label label-danger">截止: July/09/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">
+                                       运用HTML标签来做一个简易的个人介绍页面
+                                   </li>
+                                   <li class="list-group-item">
+                                       列出名字, 个人照片, 兴趣爱好排列</li>
+                                   </li>
+                                   <li class="list-group-item">
+                                       在主页加上一个<code>input, label</code>和<code>button</code>用于收集用户的信息。
+                                   </li>
+                                   <li class="list-group-item">
+                                       第二页加上一个个人介绍的paragraph, Footer里面要有联系信息, 以及三个通往你最喜欢的网页的超链接
+                                   </li>
+                                   <li class="list-group-item">
+                                       我上传了一份模版,可以照着这个排版做<br>
+                                       <br>
+                                       <a href="/img/mockup.png" download>点击下载模版</a>
+                                   </li>
+                                   <li class="list-group-item">
+                                       如果有不会的一定要问问题, 这次作业的评分是50%代码整洁度 + 50%页面美观度,加油!
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingTwo">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk02" aria-expanded="false" aria-controls="collapseTwo">
+                                   课后作业#2
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/09/2016</span>
+                                       <span class="label label-danger">截止: July/16/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                           <div class="panel-body">
+                                <div class="list-group">
+                                    <div class="list-group-item">
+                                        在上周的作业里运用这周学会的CSS属性来优化
+                                    </div>
+                                    <div class="list-group-item">
+                                        将顶上的导航栏做成一个固定位置, 也就是说,你在滚轮滑动页面的时候导航栏会跟着你滑动
+                                    </div>
+                                    <div class="list-group-item">
+                                        在页面右下角做一个固定的back to top link, 点击后会将你传送回页面最上端
+                                    </div>
+                                    <div class="list-group-item">
+                                        在页面最下端,也就是Footer 的前面, 做一个大长方形,里面以九宫格排放顺序放置九个圆形
+                                    </div>
+                                    <div class="list-group-item">
+                                        我会在周三晚上上传网页模版图示, 周四晚上上传范例模版, 上周作业还没有交的同学们请尽快发送你们的文档到我的邮箱里: peter.zheng88228@gmail.com
+                                    </div>
+                                    <div class="list-group-item">
+                                        这周的作业模版: <a href="assets/peter.zip" download>Homework #2 模版</a>
+                                    </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk03" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#3
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/16/2016</span>
+                                       <span class="label label-danger">截止: July/23/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                                <div class="list-group-item">
+                                中文:
+                                </div>
+                               <div class="list-group-item">
+                                用上课教的逆向CSS -> HTML 结构画出 5 * 5 的图形矩阵
+                               </div>
+                               <div class="list-group-item">
+                                边距分别是: <code>left/top: 0, left/top: 25%, left/top: 50%, left/top: 75%, right/bottom:0</code>
+                               </div>
+                               <div class="list-group-item">
+                                使用Hover Property, 给每个图形加上一些小动画,可以有: <code>background-color, border-radius, width, height, box-shadow</code>等变幻
+                               </div>
+                               <div class="list-group-item">
+                                继续用CSS 优化你的网页, 做得美观一点
+                               </div>
+                               <div class="list-group-item">
+                                我会在周四之前上传我的模版, 你们这周的作业量并不多, 剩下的时间要用来复习下周六的期中考, 加油!
+                               </div>
+                               <div class="list-group-item">
+                                   这周的作业模版, 做出二十五个圆圈,并加上动画效果。 已修正右下角的导航链接bug
+                               </div>
+                               <div class="list-group-item">
+                                   <a href="peter.zip" download>Week 3 作业模版</a>
+                               </div>
+                               <div class="list-group-item">
+                                English:
+                               </div>
+                               <div class="list-group-item">
+                                Use what we learned in class (reverse CSS -> HTML structuring) to code a 5 * 5 shape matrix
+                               </div>
+                               <div class="list-group-item">
+                                The distance in percentage relative to the borders are: <code>left/top: 0, left/top: 25%, left/top: 50%, left/top: 75%, right/bottom:0</code>
+                               </div>
+                               <div class="list-group-item">
+                                Use the hover properties, give every circle a little animation, you can change their: <code>background-color, border-radius, width, height, box-shadow</code> etc.
+                               </div>
+                               <div class="list-group-item">
+                                Continue to beautify your website with what you learned today with CSS
+                               </div>
+                               <div class="list-group-item">
+                                I will upload a sample by Thursday next week, You will have your Midterm exam next week, study your notes and codes, and good luck!
+                               </div>
+                               <div class="list-group-item">
+                                   I have posted this week's homework template, I made the 25 circles matrix, with some cool glow animation, check it out and review for tmr's test!
+                               </div>
+                               <div class="list-group-item">
+                                   <a href="peter.zip" download>Download Template here</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingFour">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk04" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#4
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/23/2016</span>
+                                       <span class="label label-danger">截止: July/30/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                              <div class="list-group-item">
+                                这周的作业是做出3层的dropdown menu， 第二层要在第一层的左边，第三层要在第二层的左边。 这事我们这个学期的最后一节HTML 和 CSS的基础课程，从下节课开始上库和JS的内容了，大家务必把这节课的作业做好，交上来。之前缺作业或者考试考砸了的同学们可以以这次作业来拉高分数。
+                              </div>
+                              <div class="list-group-item">
+                                <a href="peter.zip" download>点击此处下载Week 4 作业模版</a>
+                              </div>
+                              <div class="list-group-item">
+                                English: This week's homework is to make a 3-level dropdown menu, the second level should stay on the first level's left, and third level should stay on second level's left. This will be our last HTML &amp; CSS class, from next class on, we will start learning Bootstrap and professional website design. This week's homework will be your chance to improve your previous homework grade &amp; midterm grade. I have uploaded the week 4 template down below. See you next week.
+                              </div>
+                              <div class="list-group-item">
+                                  <a href="peter.zip" download>Click to download week 4 template</a>
+                              </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingFive">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk05" aria-expanded="false" aria-controls="webwk05">
+                                   课后作业#5
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/30/2016</span>
+                                       <span class="label label-danger">截止: August/6/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                                <div class="list-group-item">
+                                    这周的作业课堂上已经讲过了, 下面是作业的模版, 请不要照单全抄。大家写的作业越接近原版越好, 细节,细节
+                                </div>
+                               <div class="list-group-item">
+                                   <a href="bs.zip" download>作业模版, 点击下载</a>
+                               </div>
+                               <div class="list-group-item">
+                                   This week's homework is to emulate an instagram profile page, the details are included in the following zip file, make it as much like the original as possible!
+                               </div>
+                               <div class="list-group-item">
+                                   <a href="bs.zip" download>Homework Template, Do not copy 100%</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingSix">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk06" aria-expanded="false" aria-controls="webwk06">
+                                   课后作业#6
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/6/2016</span>
+                                       <span class="label label-danger">截止: August/13/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingSeven">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#webwk07" aria-expanded="false" aria-controls="webwk07">
+                                   课后作业#7
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/13/2016</span>
+                                       <span class="label label-danger">截止: August/20/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="webwk07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+                                <div class="list-group-item">
+                                    完成剩余的个人网站作业,以及复习期末考试。
+                                    <br>
+                                    参考网址: <a href="https://d1pjt3nqojscd2.cloudfront.net/">个人网站模版</a>
+                                </div>
+                               <div class="list-group-item">
+                                   <a href="">期末考试复习提纲</a>
+                               </div>
+                               <div class="list-group-item">
+                                   Finish the rest of the personal site, customize it fully.
+                                   <br>
+                                   You may visit the template site here : <a href="https://d1pjt3nqojscd2.cloudfront.net/">Template site</a>
+                               </div>
+                               <div class="list-group-item">
+                                   <a href="">Study guide for the final</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+
+           <h1 class="hw-subject" id="pythonwk">Python课后作业</h1>
+           <div class="hw-accordion">
+               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingOne">
+                           <h4 class="panel-title">
+                               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk01" aria-expanded="true" aria-controls="collapseOne">
+                                   课后作业#1
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/10/2016</span>
+                                       <span class="label label-danger">截止: July/17/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                           <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">使用Variable, for loop, if loop, 在Console输出以下图形:</li>
+                                    <li class="list-group-item" style="text-align: center;">
+                                        <code style="text-align: center;">
+                                            *<br>**<br>***<br>****<br>*****
+                                        </code>
+                                    </li>
+                                </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingTwo">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk02" aria-expanded="false" aria-controls="collapseTwo">
+                                   课后作业#2
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/17/2016</span>
+                                       <span class="label label-danger">截止: July/24/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                           <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">这周作业都在这个文档里了,点击下载: <a href="assets/hw2.py">Python第二周作业</a> </li>
+                                    <li class="list-group-item">English: This week's homework is in this file here, click to download:
+                                        <a href="assets/hw2.py">Python Homework Week 2</a></li>
+                                </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk03" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#3
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/24/2016</span>
+                                       <span class="label label-danger">截止: July/31/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk04" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#4
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/31/2016</span>
+                                       <span class="label label-danger">截止: August/7/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk05" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#5
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/7/2016</span>
+                                       <span class="label label-danger">截止: August/14/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk06" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#6
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/14/2016</span>
+                                       <span class="label label-danger">截止: August/21/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pywk07" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#7
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/21/2016</span>
+                                       <span class="label label-danger">截止: August/28/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="pywk07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+
+           <h1 class="hw-subject" id="ioswk">iOS课后作业</h1>
+           <div class="hw-accordion" style="margin-bottom: 150px;">
+               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingOne">
+                           <h4 class="panel-title">
+                               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#ios01" aria-expanded="true" aria-controls="collapseOne">
+                                   课后作业#1
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/03/2016</span>
+                                       <span class="label label-danger">截止: July/10/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                           <div class="panel-body">
+                               <ul class="list-group">
+                                   <li class="list-group-item">建立一个新的Project,</li>
+                                   <li class="list-group-item">使用Variable, for loop, if loop, 在Console输出以下图形:</li>
+                                   <li class="list-group-item" style="text-align: center;">
+                                       <code style="text-align: center;">
+                                           *<br>**<br>***<br>****<br>*****
+                                       </code>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingTwo">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios02" aria-expanded="false" aria-controls="collapseTwo">
+                                   课后作业#2
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/10/2016</span>
+                                       <span class="label label-danger">截止: July/17/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios03" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#3
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/17/2016</span>
+                                       <span class="label label-danger">截止: July/24/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios04" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#4
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/24/2016</span>
+                                       <span class="label label-danger">截止: July/31/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios05" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#5
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: July/31/2016</span>
+                                       <span class="label label-danger">截止: August/7/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios06" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#6
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/7/2016</span>
+                                       <span class="label label-danger">截止: August/14/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="headingThree">
+                           <h4 class="panel-title">
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ios07" aria-expanded="false" aria-controls="collapseThree">
+                                   课后作业#7
+                                   <div class="hw-info">
+                                       <span class="label label-info">布置: August/14/2016</span>
+                                       <span class="label label-danger">截止: August/21/2016</span>
+                                   </div>
+                               </a>
+                           </h4>
+                       </div>
+                       <div id="ios07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                           <div class="panel-body">
+
+                           </div>
+                       </div>
+                   </div>
+           </div>
+       </div>
+       <div class="col-md-1">
+           <!--blank-->
+       </div>
+   </div>
+
+</section>
+
+<section>
+    <div id="last-three" class="footer stripe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2><strong>关注我们的社交媒体</strong>
+                        <br>
+                        <span>掌握新技术，赶上大趋势，选择最热门，开发新未来！</span></h2>
+                    <div class="row social-group">
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type8">
+                                <a href="">
+                                    <div class="title"><i class="fa fa-linkedin"></i></div>
+                                    <p><strong>关注我们的<br>领英!</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type9">
+                                <a href="https://twitter.com/IT_Prep">
+                                    <div class="title"><i class="fa fa-twitter"></i></div>
+                                    <p><strong>关注我们的<br>推特！</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type3">
+                                <a href="">
+                                    <div class="title"><i class="fa fa-weibo"></i></div>
+                                    <p><strong>关注我们的<br>微博！</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type5">
+                                <a href="https://www.instagram.com/itprep/?hl=en">
+                                    <div class="title"><i class="fa fa-instagram"></i></div>
+                                    <p><strong>关注我们的<br>Instagram！</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type7" data-toggle="modal" data-target=".wechat-modal">
+                                <a>
+                                    <div class="title"><i class="fa fa-weixin"></i></div>
+                                    <p><strong>关注我们的<br>微信公众号！</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2 social-media-item">
+                            <div class="ticket type6">
+                                <a href="https://www.facebook.com/itprep/">
+                                    <div class="title"><i class="fa fa-facebook"></i></div>
+                                    <p><strong>关注我们的<br>Facebook！</strong></p>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  <!--wechat modal-->
+    <div class="modal fade wechat-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">微信公众号</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>打开手机微信，扫一扫关注我们的公众号吧！</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/qr.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/phone.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                    <h5>或打开手机微信 > 添加好友 > 查找公众号 > 输入：techprep > 关注我们！</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+<script src="js/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68524303-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

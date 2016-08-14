@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>IT少年宫 ｜ 报名表</title>
+    <link rel="icon" href="img/favicon.png">
+    
+    
+
+    <link rel='stylesheet prefetch' href="css/style.css"> <!--bs-->
+
+        <link rel="stylesheet" href="css/contact.css"> <!--custom contact.css + style from original-->
+
+    
+    
+    
+  </head>
+
+  <body>
+
+
+    <h1> IT 少年宫 2016 暑期培训班报名表
+  <small>提交您的报名表，我们的工作人员会在12小时内与您联系</small>
+</h1>
+<section class="contact-wrap">
+  <form class="contact-form" action="contact.php" method="post">
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">姓名</label>
+        <input type="text" name="pname" class="form-control" required autofocus>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">年龄</label>
+        <input type="number" name="page" min="8" max="40" class="form-control" required>
+      </div>
+    </div>
+    <div class="col-sm-12 strange-field">
+      <div class="input-block">
+        <label for="">电子邮箱地址</label>
+        <input type="text" name="pemail" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">电话号码</label>
+        <input type="tel" name="pphone" class="form-control" required>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block textarea">
+        <label for="">我想学...</label>
+        <textarea rows="3" type="text" name="pmsg" class="form-control" required></textarea>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <button class="square-button" name="submit" type="submit">提交报名表</button>
+    </div>
+  </form>
+</section>
+
+
+    <script src='js/jquery-2.2.3.min.js'></script>
+
+        <script src="js/contact.js"></script>
+
+    
+    
+    
+  </body>
+</html>
