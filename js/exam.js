@@ -138,49 +138,49 @@ $(function () {
         if ($('#a35').val() === 'a') {
             totalPoints += 1;
         }
-        if ($('#a36').val() === 'c') {
+        if ($('#a36').val() === 'b') {
             totalPoints += 1;
         }
-        if ($('#a37').val() === 'c') {
+        if ($('#a37').val() === 'a') {
             totalPoints += 1;
         }
         if ($('#a38').val() === 'c') {
             totalPoints += 1;
         }
-        if ($('#a39').val() === 'c') {
+        if ($('#a39').val() === 'd') {
             totalPoints += 1;
         }
         if ($('#a40').val() === 'c') {
             totalPoints += 1;
         }
-        if ($('#a41').val() === 'c') {
+        if ($('#a41').val() === 'b') {
             totalPoints += 1;
         }
-        if ($('#a42').val() === 'c') {
+        if ($('#a42').val() === 'a') {
             totalPoints += 1;
         }
-        if ($('#a43').val() === 'c') {
+        if ($('#a43').val() === 'd') {
             totalPoints += 1;
         }
-        if ($('#a44').val() === 'c') {
+        if ($('#a44').val() === 'd') {
             totalPoints += 1;
         }
         if ($('#a45').val() === 'c') {
             totalPoints += 1;
         }
-        if ($('#a46').val() === 'c') {
+        if ($('#a46').val() === 'b') {
             totalPoints += 1;
         }
-        if ($('#a47').val() === 'c') {
+        if ($('#a47').val() === 'd') {
             totalPoints += 1;
         }
-        if ($('#a48').val() === 'c') {
+        if ($('#a48').val() === 'a') {
             totalPoints += 1;
         }
         if ($('#a49').val() === 'c') {
             totalPoints += 1;
         }
-        if ($('#a50').val() === 'c') {
+        if ($('#a50').val() === 'b') {
             totalPoints += 1;
         };
 
