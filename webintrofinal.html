@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+<head>
+    <title>IT 少年宫 | Web Final</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="image" content="img/icon.png">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <script src="js/head.js"></script>
+    <link rel="stylesheet" href="css/exam.css">
+    <script src="js/exam.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+</head>
+
+    <body id="testPage">
+        <section class="header">
+            <center>
+                <h1>IT少年宫 | 入门网页设计 | 期末考试</h1>
+                <br>
+                <div class="starDivider"></div>
+                <span class="fa fa-star"></span>
+            </center>
+            <div class="introText">
+                <p>Web Final Exam</p>
+                <form id="examTaker">
+                    <span>Name: </span><input type="text" id="fullName" placeholder="Enter your full name here" required>
+                    <br>
+                    <span>Age: </span><input type="text" id="age" placeholder="Enter your age here" required>
+                </form>
+                <br>
+                <p>
+                    <b>Instruction</b>:
+                    Please read each question carefully before answering, understand what the question is asking for. Answer the questions by selecting the answer choice that you think is correct and do not talk to your neighbors during the exam. You may not use your computer/notes to help you with answering these questions. You have up to 30 minutes to finish this exam, after you’re done, you may turn your exam in and work on the bonus question quietly. Good luck!
+                </p>
+            </div>
+        </section>
+            <section class="questionContent" ng-app="questionContent" ng-controller="myCtrl">
+                    <h1>
+                        <b><em>HTML</em></b>
+                    </h1>
+                    <div class="questionTemp">
+                        <div class="answerChoices">
+                            <p>1. What does HTML stand for?</p>
+                                <span>A. Home Tool Markup Language</span>
+                                <span>B. Hyperlinks and Text Markup Language</span>
+                                <span>C. Hyper Text Markup Language</span>
+                        </div>
+                        <div class="selectionContainer">
+                            <select ng-model="q1" id="a1">
+                                <option value="">Select Your Response</option>
+                                <option value="a">A.</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                            </select>
+                            <span>
+                                Your Answer: <h1>{{q1}}</h1>
+                            </span>
+                        </div>
+                    </div>
+                <hr>
+                    <div class="questionTemp">
+                        <div class="answerChoices">
+                            <p>2. Who is making the Web standards?</p>
+                            <span>A. Google</span>
+                            <span>B. IT Prep</span>
+                            <span>C. Microsoft</span>
+                            <span>D. The World Wide Web Consortium</span>
+
+                        </div>
+                        <div class="selectionContainer">
+                            <select ng-model="q2" id="a2">
+                                <option value="">Select Your Response</option>
+                                <option value="a">A.</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                                <span>
+                                    Your Answer: <h1>{{q2}}</h1>
+                                </span>
+                        </div>
+                    </div>
+                <hr>
+                    <div class="questionTemp">
+                        <div class="answerChoices">
+                            <p>3. Choose the correct HTML element for the largest heading:</p>
+                            <br>
+                            <span>A. &#60;heading&#62;</span>
+                            <span>B. &#60;h6&#62;</span>
+                            <span>C. &#60;h1&#62;</span>
+                            <span>D. &#60;head&#62;</span>
+                        </div>
+                        <div class="selectionContainer">
+                            <select ng-model="q3" id="a3">
+                                <option value="">Select Your Response</option>
+                                <option value="a">A.</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                                <span>
+                                    Your Answer: <h1>{{q3}}</h1>
+                                </span>
+                        </div>
+                    </div>
+                <hr>
+                    <div class="questionTemp">
+                        <div class="answerChoices">
+                            <p>4. What is the correct HTML element for inserting a line break?</p>
+                            <br>
+                            <span>A. &#60;lb&#62;</span>
+                            <span>B. &#60;break&#62;</span>
+                            <span>C. &#60;br&#62;</span>
+                            <span>D. &#60;hr&#62;</span>
+                        </div>
+                        <div class="selectionContainer">
+                            <select ng-model="q4" id="a4">
+                                <option value="">Select Your Response</option>
+                                <option value="a">A.</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                                    <span>
+                                        Your Answer: <h1>{{q4}}</h1>
+                                    </span>
+                        </div>
+                    </div>
+                <hr>
+                    <div class="questionTemp">
+                        <div class="answerChoices">
+                            <p>5.What is the correct HTML for adding a background color?</p>
+                            <br>
+                            <span>A. &#60;background&#62;yellow&#60;/background&#62;</span>
+                            <span>B. &#60;body style="background-color:yellow;"&#62;</span>
+                            <span>C. &#60;body bg="yellow;"&#62;</span>
+                            <span>D. &#60;hr&#62;</span>
+                        </div>
+                        <div class="selectionContainer">
+                            <select ng-model="q5" id="a5">
+                                <option value="">Select Your Response</option>
+                                <option value="a">A.</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                                        <span>
+                                            Your Answer: <h1>{{q5}}</h1>
+                                        </span>
+                        </div>
+                    </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>6. What is the correct HTML for creating a hyperlink?</p>
+                        <br>
+                        <span>A. &#60;a url="http://www.itprep.tech"&#62;itprep.tech&#60;/a&#62;</span>
+                        <span>B. &#60;a name="http://itprep.tech"&#62;itprep.tech&#60;/a&#62;</span>
+                        <span>C. &#60;a href="http://itprep.tech"&#62;itprep.tech&#60;/a"&#62;</span>
+                        <span>D. &#60;a&#62;http://itprep.tech&#60;/a&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q6" id="a6">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A.</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q6}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>7. Inline elements are normally displayed without starting a new line.</p>
+                        <br>
+                        <span>True</span>
+                        <span>False</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q7" id="a7">
+                            <option value="">Select Your Response</option>
+                            <option value="a">True.</option>
+                            <option value="b">False</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q7}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>8. How can you make a numbered list?</p>
+                        <br>
+                        <span>A. &#60;ol&#62;</span>
+                        <span>B. &#60;list&#62;</span>
+                        <span>C. &#60;ul&#62;</span>
+                        <span>D. &60;dl&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q8" id="a8">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q8}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>9. What is the correct HTML for making a text input field?</p>
+                        <br>
+                        <span>A. &#60;textfield&#62;</span>
+                        <span>B. &#60;input type="text"&#62;</span>
+                        <span>C. &#60;textinput type="text"&#62;</span>
+                        <span>D. &#60;input type="textfield"&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q9" id="a9">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q9}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>10. What is the correct HTML for inserting an image?</p>
+                        <br>
+                        <span>A. &#60;image src="image.jpg"&#62;</span>
+                        <span>B. &#60;img href="image.jpg"&#62;</span>
+                        <span>C. &#60;img alt="image.jpg&#62;</span>
+                        <span>D. &#60;img src="image.jpg&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q10" id="a10">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q10}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>11. What is the correct HTML for inserting a background image?</p>
+                        <br>
+                        <span>A. &#60;body style="background-image:url(background.gif)"&#62;</span>
+                        <span>B. &#60;body bg="background.gif&#62;</span>
+                        <span>C. &#60;background img="background.gif"&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q11" id="a11">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q11}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>12. An &#60;iframe&#62; is used to display a web page within a web page.</p>
+                        <br>
+                        <span>A. True</span>
+                        <span>B. False</span>
+                        <span>C. There is no such thing as &#60;iframe&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q12" id="a12">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q12}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>13. HTML comments start with &#60;!-- and end with --&#62;</p>
+                        <br>
+                        <span>A. True</span>
+                        <span>B. False</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q13" id="a13">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q13}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <h1>
+                    <b><em>CSS</em></b>
+                </h1>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>14. What does CSS stand for?</p>
+                        <br>
+                        <span>A. Computer Style Sheets</span>
+                        <span>B. Creative Style Sheets</span>
+                        <span>C. Colorful Style Sheets</span>
+                        <span>D. Cascading Style Sheets</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q14" id="a14">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q14}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>15. What is the correct HTML for referring to an external style sheet?</p>
+                        <br>
+                        <span>A. &#60;stylesheet&#62;myStylesheet.css&#60;/stylesheet&#62;</span>
+                        <span>B. &#60;link rel="stylesheet" type="text/css" href="mystyle.css"&#62;</span>
+                        <span>C. &#60;style src="mystyle.css"&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q15" id="a15">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q15}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>16. Where in an HTML document is the correct place to refer to an external style sheet?</p>
+                        <br>
+                        <span>A. In the &#60;body&#62; section</span>
+                        <span>B. At the end of the document</span>
+                        <span>C. In the &#60;head&#62; section</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q16" id="a16">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q16}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>17. Which HTML tag is used to define an internal style sheet?</p>
+                        <br>
+                        <span>A. &#60;css&#62;</span>
+                        <span>B. &#60;style&#62;</span>
+                        <span>C. &#60;script&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q17" id="a17">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q17}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>18. Which is the correct CSS syntax?</p>
+                        <br>
+                        <span>A. body:color=black;</span>
+                        <span>B. {body;color:black;}</span>
+                        <span>C. body {color: black;}</span>
+                        <span>D. {body:color=black;}</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q18" id="a18">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q18}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>19. How do you add a background color for all &#60;h1&#62; elements?</p>
+                        <br>
+                        <span>A. all.h1 {background-color:#FFFFFF;}</span>
+                        <span>B. h1.all {background-color:#FFFFFF;}</span>
+                        <span>C. h1 {background-color:#FFFFFF;}</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q19" id="a19">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q19}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>20.Which CSS property is used to change the text color of an element?</p>
+                        <br>
+                        <span>A. fgcolor</span>
+                        <span>B. color</span>
+                        <span>C. text-color</span>
+                        <span>D. font-color</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q20" id="a20">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q20}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>21. Which CSS property controls the text size?</p>
+                        <br>
+                        <span>A. text-size</span>
+                        <span>B. font-size</span>
+                        <span>C. text-style</span>
+                        <span>D. font-style</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q21" id="a21">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q21}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>22.What is the correct CSS syntax for making all the &#60;p&#62; elements bold?</p>
+                        <br>
+                        <span>A. &#60;p style="text-size:bold;"&#62;</span>
+                        <span>B. p {text-size:bold;}</span>
+                        <span>C. p {font-weight:bold;}</span>
+                        <span>D. &#60;p style="font-size:bold;"&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q22" id="a22">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q22}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>23.How do you make each word in a text start with a capital letter?</p>
+                        <br>
+                        <span>A. text-transform:capitalize</span>
+                        <span>B. You can't do that with CSS</span>
+                        <span>C. text-transform:uppercase</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q23" id="a23">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q23}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>24. Which property is used to change the font of an element?</p>
+                        <br>
+                        <span>A. Both font-family and font can be used</span>
+                        <span>B. font-family</span>
+                        <span>C. font</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q24" id="a24">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q24}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>25.How do you make the text bold?</p>
+                        <br>
+                        <span>A. font:bold;</span>
+                        <span>B. style:bold;</span>
+                        <span>C. font-weight:bold;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q25" id="a25">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q25}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>26.How do you display a border like this:</p>
+                        <p>The top border = 10 pixels</p>
+                        <p>The bottom border = 5 pixels</p>
+                        <p>The left border = 20 pixels</p>
+                        <p>The right border = 1pixel?</p>
+                        <br>
+                        <span>A. border-width:10px 5px 20px 1px;</span>
+                        <span>B. border-width:10px 1px 5px 20px;</span>
+                        <span>C. border-width:5px 20px 10px 1px;</span>
+                        <span>D. border-width:10px 20px 5px 1px;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q26" id="a26">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q26}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>27.Which property is used to change the left margin of an element?</p>
+                        <br>
+                        <span>A. margin-left</span>
+                        <span>B. indent</span>
+                        <span>C. padding-left</span>
+                        <span>D. left</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q27" id="a27">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q27}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>28.How do you select an element with id "demo"?</p>
+                        <br>
+                        <span>A. demo</span>
+                        <span>B. .demo</span>
+                        <span>C. *demo</span>
+                        <span>D. #demo</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q28" id="a28">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q28}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>29. How do you select elements with class name "test"?</p>
+                        <br>
+                        <span>A. test</span>
+                        <span>B. *demo</span>
+                        <span>C. #demo</span>
+                        <span>D. .demo</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q29" id="a29">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q29}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>30.How do you select all p elements inside a div element?</p>
+                        <br>
+                        <span>A. div.p</span>
+                        <span>B. div p</span>
+                        <span>C. div + p</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q30" id="a30">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q30}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>31.What is the default value of the position property?</p>
+                        <br>
+                        <span>A. absolute</span>
+                        <span>B. static</span>
+                        <span>C. fixed</span>
+                        <span>D. relative</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q31" id="a31">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q31}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>32. The Bootstrap grid system is based on how many columns?</p>
+                        <br>
+                        <span>A. 3</span>
+                        <span>B. 6</span>
+                        <span>C. 12</span>
+                        <span>D. 9</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q32" id="a32">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q32}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <h1>
+                    <b><em>Bootstrap</em></b>
+                </h1>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>33.Which button class is used to create a large button?</p>
+                        <br>
+                        <span>A. .btn-lg</span>
+                        <span>B. .btn-l</span>
+                        <span>C. .btn-large</span>
+                        <span>D. .btn-xl</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q33" id="a33">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q33}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>34.How can you insert a search icon?</p>
+                        <br>
+                        <span>A. &#60;span  class="glyphicon glyphicon-search"&#62;&#60;/span&#62;</span>
+                        <span>B. &#60;span  class="glyphicon-search"&#62;&#60;/span&#62;</span>
+                        <span>C. &#60;span class="glyphicon search"&#62;&#60;/span&#62;</span>
+                        <span>D. &#60;span class="glyph glyph-search"&#62;&#60;/span&#62;</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q34" id="a34">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q34}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>35.The Bootstrap grid system works across multiple devices.</p>
+                        <br>
+                        <span>A. True</span>
+                        <span>B. False</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q35" id="a35">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q35}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
+                        <p>28.How do you select an element with id "demo"?</p>
+                        <br>
+                        <span>A. demo</span>
+                        <span>B. .demo</span>
+                        <span>C. *demo</span>
+                        <span>D. #demo</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q28" id="a28">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q28}}</h1>
+                                        </span>
+                    </div>
+                </div>
+
+                        <br>
+                <table class="table table-striped" id="table" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Answer Choice</th>
+                            <th>Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{q1}}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>{{q2}}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>{{q3}}</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-block btn-info" id="finish">I'm Finished</button>
+            </section>
+    </body>
+
+<script src="js/main.js"></script>
+</body>
+</html>

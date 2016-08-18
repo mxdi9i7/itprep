@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-static-select-production</title>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+
+
+</head>
+<body>
+<div ng-app="staticSelect" ng-controller="ExampleController">
+    <form name="myForm">
+
+        <select ng-model="data.singleSelect">
+            <option value="">---Please select---</option> <!-- not selected / blank option -->
+            <option value="A">A</option> <!-- interpolation -->
+            <option value="B">B</option>
+        </select>
+        <br>
+
+        <p>Your Answer = {{data.singleSelect}}</p>
+    </form>
+</div>
+
+<script>
+    (function(angular) {
+        'use strict';
+        angular.module('staticSelect', [])
+                .controller('ExampleController', ['$scope', function($scope) {
+                }]);
+    })(window.angular);
+</script>
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

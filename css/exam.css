@@ -1,0 +1,109 @@
+.examPageHeader h1 {
+    text-align: center;
+    font-weight: 900;
+    margin: 20px;
+}
+.examPageHeader .row a {
+    background-color: #395799;
+    padding: 18px 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 50px;
+    transition: 0.8s;
+}
+.examPageHeader .row a:hover {
+    color: #395799;
+    background-color: white;
+    border: 1px solid #395799;
+}
+.examPageHeader .row a:focus {
+    border: 6px solid #395799;
+}
+.examPageHeader .row .col-md-6 {
+    margin: 100px 0px;
+}
+.examPageHeader .starDivider {
+    height: 7px;
+    width: 250px;
+    background-color: #395799;
+}
+.header .starDivider {
+    height: 7px;
+    width: 250px;
+    background-color: #333;
+}
+.header span.fa {
+    font-size: 38px;
+    position: relative;
+    top: -30px;
+    background-color: white;
+    padding: 5px;
+    color: #333;
+}
+
+.examPageHeader span.fa {
+    font-size: 38px;
+    position: relative;
+    top: -30px;
+    background-color: white;
+    padding: 5px;
+    color: #395799;
+}
+
+.header h1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #333;
+}
+#testPage {
+    padding: 50px 100px;
+    color: #333;
+    font-family: 'Montserrat';
+
+}
+.header input {
+    margin: 10px;
+    width: 300px;
+}
+.questionContent {
+    padding: 50px;
+}
+.questionContent h1 {
+    margin: 50px 0px;
+}
+.questionContent .questionTemp {
+    margin: 50px 0px;
+    padding: 20px;
+}
+.questionContent .selectionContainer {
+    display: inline;
+}
+.questionContent .selectionContainer select{
+    margin: 20px;
+}
+.questionTemp .selectionContainer span {
+    display: inline;
+    float: right;
+}
+.questionTemp .selectionContainer span h1 {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 128px;
+}
+.questionTemp .answerChoices p, .questionTemp .answerChoices span {
+    display: block;
+    margin: 10px 0px;
+}
+table th {
+    text-align: center;
+}
+table td {
+    text-transform: uppercase;
+    text-align: center;
+}
+#finish {
+    padding: 30px 20px;
+    font-size: 48px;
+    font-weight: bolder;
+}
