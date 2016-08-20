@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Article">
+<html itemscope itemtype="http://schema.org/Article" ng-app="questionContent" ng-controller="myCtrl">
 <head>
     <title>IT 少年宫 | Web Final</title>
     <meta charset="utf-8">
@@ -32,9 +32,11 @@
             <div class="introText">
                 <p>Web Final Exam</p>
                 <form id="examTaker">
-                    <span>Name: </span><input type="text" id="fullName" placeholder="Enter your full name here" required>
+                    <span>Name: </span><input type="text" id="fullName" placeholder="Enter your full name here" ng-model="name" required>
                     <br>
-                    <span>Age: </span><input type="text" id="age" placeholder="Enter your age here" required>
+                    <span>Age: </span><input type="text" id="age" placeholder="Enter your age here" ng-model="age" required>
+                    <br>
+                    <span>Email:</span><input type="email" id="email" placeholder="Enter your email here" ng-model="email" required>
                 </form>
                 <br>
                 <p>
@@ -48,7 +50,7 @@
             app.controller('myCtrl', function($scope) {
             });
         </script>
-            <section class="questionContent" ng-app="questionContent" ng-controller="myCtrl">
+            <section class="questionContent">
                     <h1>
                         <b><em>HTML</em></b>
                     </h1>
@@ -1133,33 +1135,19 @@
                 </div>
 
                         <br>
-                <table class="table table-striped" id="table" style="display: none;">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Answer Choice</th>
-                            <th>Point</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>{{q1}}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>{{q2}}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>{{q3}}</td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <button class="btn btn-block btn-info" id="finish">I'm Finished</button>
+                <form action="grade.php" method="post">
+                    <center>
+                        Your name
+                        <input type="text" name="cf_name" id="cf_name" ng-bind="name">
+                        Your e-mail
+                        <input type="text" name="cf_email" id="cf_email" ng-bing="email">
+                        Your grade
+                        <input type="text" name="cf_grade" id="cf_grade" ng-bind="grade" readonly>
+                        <br>
+                        <br>
+                    </center>
+                    <input type="submit" class="btn btn-block btn-info" id="finish" value="I'm Finished">
+                </form>
             </section>
     </body>
 

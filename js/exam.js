@@ -179,7 +179,12 @@ $(function () {
         var wrongAnswer = 50-totalPoints;
         var fullName = $('#fullName').val();
         var age = $('#age').val();
-        alert(fullName + '!' + ' You are ' + age + ' years old, and ' + ' you scored: ' + totalPoints*2 + ', ' + ' You missed: ' + wrongAnswer + ', ' + ' and You got ' + totalPoints + ' questions right! Good Job!');
+        var email = $("#email").val();
+        var grade = totalPoints;
+        $('#cf_grade').val(grade);
+        $('#cf_email').val(email);
+        $('#cf_name').val(fullName);
+        //alert(fullName + '!' + ' You are ' + age + ' years old, and ' + ' you scored: ' + totalPoints*2 + ', ' + ' You missed: ' + wrongAnswer + ', ' + ' and You got ' + totalPoints + ' questions right! Good Job!');
     });
 
 
