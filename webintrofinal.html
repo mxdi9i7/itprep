@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/exam.css">
     <script src="js/exam.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
 </head>
 
@@ -43,6 +43,11 @@
                 </p>
             </div>
         </section>
+        <script>
+            var app = angular.module('questionContent', []);
+            app.controller('myCtrl', function($scope) {
+            });
+        </script>
             <section class="questionContent" ng-app="questionContent" ng-controller="myCtrl">
                     <h1>
                         <b><em>HTML</em></b>
@@ -205,7 +210,7 @@
                         <span>A. &#60;ol&#62;</span>
                         <span>B. &#60;list&#62;</span>
                         <span>C. &#60;ul&#62;</span>
-                        <span>D. &60;dl&#62;</span>
+                        <span>D. &#60;dl&#62;</span>
                     </div>
                     <div class="selectionContainer">
                         <select ng-model="q8" id="a8">
@@ -248,8 +253,8 @@
                         <br>
                         <span>A. &#60;image src="image.jpg"&#62;</span>
                         <span>B. &#60;img href="image.jpg"&#62;</span>
-                        <span>C. &#60;img alt="image.jpg&#62;</span>
-                        <span>D. &#60;img src="image.jpg&#62;</span>
+                        <span>C. &#60;img alt="image.jpg"&#62;</span>
+                        <span>D. &#60;img src="image.jpg"&#62;</span>
                     </div>
                     <div class="selectionContainer">
                         <select ng-model="q10" id="a10">
@@ -650,9 +655,9 @@
                         <p>29. How do you select elements with class name "test"?</p>
                         <br>
                         <span>A. test</span>
-                        <span>B. *demo</span>
-                        <span>C. #demo</span>
-                        <span>D. .demo</span>
+                        <span>B. *test</span>
+                        <span>C. #test</span>
+                        <span>D. .test</span>
                     </div>
                     <div class="selectionContainer">
                         <select ng-model="q29" id="a29">
@@ -709,6 +714,8 @@
                                         </span>
                     </div>
                 </div>
+                <b><em>Bootstrap</em></b>
+
                 <div class="questionTemp">
                     <div class="answerChoices">
                         <p>32. The Bootstrap grid system is based on how many columns?</p>
@@ -732,7 +739,6 @@
                     </div>
                 </div>
                 <h1>
-                    <b><em>Bootstrap</em></b>
                 </h1>
                 <div class="questionTemp">
                     <div class="answerChoices">
@@ -914,7 +920,7 @@
                         <p>41. In CSS, it is not possible to specify different padding for different sides</p>
                         <br>
                         <span>A. True</span>
-                        <span>B. false</span>
+                        <span>B. False</span>
                     </div>
                     <div class="selectionContainer">
                         <select ng-model="q41" id="a41">
@@ -1017,6 +1023,28 @@
                 </div>
                 <div class="questionTemp">
                     <div class="answerChoices">
+                        <p>46. How would you style an element so that the next element would appear right next to it not underneath it if both elements widths were collectively smaller than the container element?</p>
+                        <br>
+                        <span>A. Display: left;</span>
+                        <span>B. Display: inline;</span>
+                        <span>C. Display: Horizontal;</span>
+                        <span>D. None of the above</span>
+                    </div>
+                    <div class="selectionContainer">
+                        <select ng-model="q46" id="a46">
+                            <option value="">Select Your Response</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                        </select>
+                                        <span>
+                                            Your Answer: <h1>{{q46}}</h1>
+                                        </span>
+                    </div>
+                </div>
+                <div class="questionTemp">
+                    <div class="answerChoices">
                         <p>47. If you wanted to position an element to the right in its container, what is a valid CSS property to use?</p>
                         <br>
                         <span>A. Display: right;</span>
@@ -1047,7 +1075,7 @@
                         <span>D. Fixed</span>
                     </div>
                     <div class="selectionContainer">
-                        <select ng-model="q47" id="a47">
+                        <select ng-model="q48" id="a48">
                             <option value="">Select Your Response</option>
                             <option value="a">A</option>
                             <option value="b">B</option>
@@ -1099,7 +1127,7 @@
                             <option value="d">D</option>
                         </select>
                                         <span>
-                                            Your Answer: <h1>{{q50s}}</h1>
+                                            Your Answer: <h1>{{q50}}</h1>
                                         </span>
                     </div>
                 </div>

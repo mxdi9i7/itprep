@@ -1,10 +1,4 @@
 $(function () {
-    (function(angular) {
-        'use strict';
-        angular.module('questionContent', [])
-            .controller('myCtrl', ['$scope', function($scope) {
-            }]);
-    })(window.angular);
 
     $('#submitWebIntro').click(function () {
         var password = $('#webIntroCode').val();
@@ -15,7 +9,7 @@ $(function () {
                 $('#message').html("<b class='fa fa-star'>Verification success! Your exam page will open in 3..2..1..</b>")
             }, 500);
             window.setTimeout(function () {
-                window.location = "http://itprep.tech/webintrofinal.html";
+                window.location = "webintrofinal.html";
             }, 3000);
 
         }
@@ -25,6 +19,7 @@ $(function () {
             window.location="exam.html";
         }
     });
+
     $('#finish').click(function () {
         var totalPoints = 0;
 
@@ -147,7 +142,7 @@ $(function () {
         if ($('#a39').val() === 'd') {
             totalPoints += 1;
         }
-        if ($('#a40').val() === 'c') {
+        if ($('#a40').val() === 'b') {
             totalPoints += 1;
         }
         if ($('#a41').val() === 'b') {
@@ -179,12 +174,12 @@ $(function () {
         }
         if ($('#a50').val() === 'b') {
             totalPoints += 1;
-        };
+        }
 
         var wrongAnswer = 50-totalPoints;
         var fullName = $('#fullName').val();
         var age = $('#age').val();
-        alert(fullName + '!' + ' You are ' + age + ' years old, ' + ' You scored: ' + totalPoints*2 + ', ' + ' You missed: ' + wrongAnswer + ', ' + ' and You got ' + totalPoints + ' questions right! Good Job!');
+        alert(fullName + '!' + ' You are ' + age + ' years old, and ' + ' you scored: ' + totalPoints*2 + ', ' + ' You missed: ' + wrongAnswer + ', ' + ' and You got ' + totalPoints + ' questions right! Good Job!');
     });
 
 
