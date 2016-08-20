@@ -1,0 +1,306 @@
+#body {
+	overflow-x: hidden;
+	width: 100vw;
+}
+.nav {
+	background-color: #2c3e50;
+	height: 70px;
+	width: 100%;
+	padding: 12px;
+}
+.navHeader {
+	margin: 0px 100px;
+}
+.navHeader h1 {
+	color: white;
+	font-weight: 800;
+	font-size: 45px;
+	text-transform: uppercase;
+	display: inline;
+	font-family: 'Acme', sans-serif;
+	margin-left: 70px;
+}
+.navHeader ul {
+	margin-left: 250px;
+	color: white;
+	font-weight: 800;
+	display: inline;
+	font-family:'Acme', sans-serif;
+}
+.navHeader ul li {
+	display: inline;
+	margin: 0px 20px;
+	padding: 5px 0px;
+}
+.navHeader ul li a {
+	text-decoration: none;
+	color: white;
+	transition: 0.4s;
+}
+.navHeader ul li a:hover {
+	color: #18bc9c;
+}
+.navHeader ul li .dropdownContent {
+	display: none;
+	position: absolute;
+	margin: 0;
+	top: 35px;
+	right: -70px;
+	padding: 0;
+}
+.navHeader ul li .dropdownContent li {
+ 	display: block;
+ 	padding: 20px 50px;
+ 	border: 2px solid white;
+ 	margin: 0;
+ 	font-size: 30px;
+ 	background-color: #2c3e50;
+
+}
+.navHeader ul li.dropdown:hover .dropdownContent {
+	display: block;
+}
+.splashPage {
+	background-color: #18bc9c;
+	padding: 35px 0px;
+	width:100%;
+	height: 663px;
+}
+.splashPage img {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.divider {
+	height: 3px;
+	width: 400px;
+	background-color: white;
+	border-radius: 2px;
+	margin-bottom: -5px;
+}
+.splashPage h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	color: white;
+	line-height: 10px;
+	font-family: 'Acme', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.splashPage p {
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+	color:white;
+	letter-spacing: 1px;
+	font-weight: 400px;
+	line-height: 32px;
+}
+.splashPage span{
+	position: relative;
+	top: -25px;
+	background-color: #18bc9c;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+.splashPage ul li {
+	display: inline;
+	font-size: 20px;
+	margin: 0px 15px;
+	transition: 0.4s;
+}
+.splashPage ul li .fa {
+	border-radius: 50px;
+	font-size: 25px;
+	border: 2px solid white;
+	padding: 11px;
+	height: 50px;
+	width: 50px;
+}
+.splashPage ul li a {
+	text-decoration: none;
+	color: white;
+	transition: 0.4s;
+}
+.splashPage ul li a:hover {
+	color: #18bc9c;
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	font-size: 25px;
+	padding: 11px;
+}
+.portFolio {
+	background-color: #2c3e50;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 10px 0px;
+	padding-bottom: 40px;
+}
+.portFolio center h1 {
+	color: white;
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-family: 'Acme', sans-serif;
+}
+.portFolio center .divider {
+	height: 3px;
+	width: 400px;
+	background-color: white;
+	border-radius: 2px;
+}
+.portFolio center span {
+	position: relative;
+	font-size: 30px;
+	top: -22px;
+	background-color: #2c3e50;
+	padding: 10px;
+	color: white;
+}
+.row {
+	margin: 5px;
+}
+.about {
+	background-color: #18bc9c;
+	width: 100%;
+	margin-top: -20px;
+	padding: 10px 0px;
+}
+.about center h1 {
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-family: 'Acme', sans-serif;
+	color: white;
+}
+.about center .divider {
+	height: 3px;
+	width: 400px;
+	background-color: white;
+	border-radius: 2px;
+}
+.about center span {
+	position: relative;
+	font-size: 30px;
+	background-color: #18bc9c;
+	color: white;
+	top: -25px;
+	padding: 10px;
+}
+.about .col-md-4 p {
+	color: white;
+	font-family: 'Acme', sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	line-height: 25px;
+	margin-top: -10px;
+}
+.about button {
+	height: 60px;
+	width: 250px;
+	font-family: 'Acme', sans-serif;
+	border-radius: 5px;
+	font-size: 25px;
+	color: white;
+	background-color: transparent;
+	border: 3px solid white;
+	margin: 20px 0px;
+	transition: 0.4s;
+}
+.about button:hover {
+	background-color: white;
+	color: #18bc9c;
+}
+.contactPage {
+	background-color: #2c3e50;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 10px 0px;
+}
+.contactPage center h1 {
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-family: 'Acme', sans-serif;
+	color: white;
+}
+.contactPage center .divider {
+	height: 3px;
+	width: 400px;
+	background-color: white;
+	border-radius: 2px;
+}
+.contactPage center span {
+	position: relative;
+	font-size: 30px;
+	background-color: #2c3e50;
+	color: white;
+	top: -22px;
+	padding: 10px;
+}
+.contactPage form input {
+	display: block;
+	height: 60px;
+	width: 600px;
+	padding: 10px;
+	margin: -2px;
+	font-size: 20px;
+	background-color: #2c3e50;
+	color: white; 
+	font-family: 'Acme', sans-serif;
+	border: 2px solid white;
+}
+.contactPage form textarea {
+	display: block;
+	height: 500px;
+	width: 600px;
+	color: white;
+	font-size: 20px;
+	background-color: #2c3e50;
+	font-family: 'Acme', sans-serif;
+	padding: 10px;
+	border: 2px solid white;
+}
+.contactPage form button {
+	display: block;
+	height: 50px;
+	width: 100px;
+	color: white;
+	font-size: 20px;
+	background-color: #18bc9c;
+	font-family: 'Acme', sans-serif;
+	border-radius: 3px;
+	border: 2px solid #18bc9c;
+	margin: 10px;
+	transition: 0.4s;
+}
+.contactPage form button:hover {
+	background-color: white;
+	color: #18bc9c;
+}
+footer {
+	font-family:  'Acme', sans-serif;
+	padding-top: 10px;
+	background-color: #18bc9c;
+	height: 170px;
+	color: white;
+	padding: 5px 5px;
+	text-transform: capitalize;
+
+}
+footer h1 {
+	font-size: 30px;
+}
+footer p {
+	font-size: 15px;
+	padding: 20px 0px;
+	letter-spacing: 2px;
+}
+.copyright p {
+	text-align: center;
+	font-size: 15px;
+	height: 50px;
+	width: 100vw;
+	background-color: #2c3e50;
+	margin-left: -23px;
+	margin-bottom: -7px;
+	padding: 15px;
+}

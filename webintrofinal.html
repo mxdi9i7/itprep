@@ -34,7 +34,7 @@
                 <form id="examTaker">
                     <span>Name: </span><input type="text" id="fullName" placeholder="Enter your full name here" ng-model="name" required>
                     <br>
-                    <span>Age: </span><input type="text" id="age" placeholder="Enter your age here" ng-model="age" required>
+                    <span>Age: </span><input type="number" id="age" placeholder="Enter your age here" max="30" min="12" ng-model="age" required>
                     <br>
                     <span>Email:</span><input type="email" id="email" placeholder="Enter your email here" ng-model="email" required>
                 </form>
@@ -798,8 +798,6 @@
                             <option value="">Select Your Response</option>
                             <option value="a">A</option>
                             <option value="b">B</option>
-                            <option value="c">C</option>
-                            <option value="d">D</option>
                         </select>
                                         <span>
                                             Your Answer: <h1>{{q35}}</h1>
@@ -1138,11 +1136,12 @@
                 <form action="grade.php" method="post">
                     <center>
                         Your name
-                        <input type="text" name="cf_name" id="cf_name" ng-bind="name">
+                        <input type="text" name="cf_name" id="cf_name" ng-bind="name" readonly>
                         Your e-mail
-                        <input type="text" name="cf_email" id="cf_email" ng-bing="email">
+                        <input type="text" name="cf_email" id="cf_email" ng-bing="email" readonly>
                         Your grade
                         <input type="text" name="cf_grade" id="cf_grade" ng-bind="grade" readonly>
+                        <input type="number" name="cf_age" id="cf_age" ng-bind="age" readonly>
                         <br>
                         <br>
                     </center>
