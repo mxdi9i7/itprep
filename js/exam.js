@@ -9,13 +9,13 @@ $(function () {
     $('#submitWebIntro').click(function () {
         var password = $('#webIntroCode').val();
 
-        var pass1="123";
+        var pass1="0212";
         if (password==pass1) {
             window.setTimeout(function () {
                 $('#message').html("<b class='fa fa-star'>Verification success! Your exam page will open in 3..2..1..</b>")
             }, 500);
             window.setTimeout(function () {
-                window.location = "webintrofinal.html";
+                window.location = "http://itprep.tech/webintrofinal.html";
             }, 3000);
 
         }
@@ -26,9 +26,6 @@ $(function () {
         }
     });
     $('#finish').click(function () {
-        $('#table').css('display', 'block');
-
-
         var totalPoints = 0;
 
 
